@@ -4,35 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Posicionamento</title>
+    <title>Alinhamento vertical</title>
     <style>
-        body{
-            height: 100vh;
-            background-color: black;
-            background-image: url(imagens/wallpaper002.jpg);
-            background-position: center top;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        main {
-            background-color: white;
-            width: 400px;
+        #container {
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+            position: relative;
+            height: 96vh;
             padding: 10px;
-            margin: auto;
-            border: 1px solid blue;
-            border-radius: 15px;
+            background-color: purple;
+
+        }
+        
+        #conteudo {
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
         }
     </style>
 </head>
 <body>
-    <main>
-        <h1>Teste de imagem de fundo</h1>
-        <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima, obcaecati dolorem quae accusamus iste laborum consequuntur autem optio quas. Ab incidunt ullam odio perspiciatis dolorem illo molestias magni totam adipisci!
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio doloribus sunt quae vitae dolorum eligendi debitis, accusamus nobis suscipit quis maiores, sint repellendus incidunt quidem animi est mollitia eaque rem.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta veritatis minima itaque corporis voluptatum molestias quidem. Hic nam molestiae architecto temporibus amet nesciunt qui, tempora ab, provident quasi dolor voluptatibus?
-        </p>
-    </main>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
 </body>
 </html>
